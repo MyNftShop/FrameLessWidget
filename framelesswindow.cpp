@@ -97,6 +97,7 @@ void FramelessWindow::setContent(QWidget *w)
     ui->contentLayout->setMargin(0);
     ui->mainLayout->addWidget(w);
     ui->scrollArea->widget()->setMinimumSize(w->size());
+    resize(w->size().width(),w->size().height()+pTitleBar->height() );
 }
 
 void FramelessWindow::setMinimizeVisible(bool visible){
