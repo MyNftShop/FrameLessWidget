@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="logo">logo.jpg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>Resources/MyTitle/close.png</file>
+        <file>Resources/MyTitle/max.png</file>
+        <file>Resources/MyTitle/min.png</file>
+        <file>Resources/MyTitle/restore.png</file>
+        <file>Resources/MyTitle.css</file>
+    </qresource>
+</RCC>

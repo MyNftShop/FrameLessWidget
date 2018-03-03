@@ -1,0 +1,86 @@
+#windowFrame{
+    border:1px solid palette(highlight); border-radius:5px 5px 5px 5px; background-color:palette(Window);
+}
+/*title bar*/
+#titleBar{background-color:#333;}
+
+QLabel#whiteLabel{
+color:white;
+}
+
+/*最小化按钮*/
+QPushButton#minimizeButton
+{
+background-color:none;
+border-image:url(:/Resources/MyTitle/min.png) 0 81 0 0 ;
+}
+
+QPushButton#minimizeButton:hover
+{
+background-color:palette(alternate-base);
+border-image:url(:/Resources/MyTitle/min.png) 0 54 0 27 ;
+}
+
+QPushButton#minimizeButton:pressed
+{
+border-image:url(:/Resources/MyTitle/min.png) 0 27 0 54 ;
+background-color:palette(highlight);
+}
+
+/*最大化按钮*/
+QPushButton#maximizeButton
+{
+background-color:none;
+border-image:url(:/Resources/MyTitle/max.png) 0 81 0 0 ;
+}
+
+QPushButton#maximizeButton:hover
+{
+background-color:palette(alternate-base);
+border-image:url(:/Resources/MyTitle/max.png) 0 54 0 27 ;
+}
+
+QPushButton#maximizeButton:pressed
+{
+background-color:palette(highlight);
+border-image:url(:/Resources/MyTitle/max.png) 0 27 0 54 ;
+}
+
+/*还原按钮*/
+QPushButton#restoreButton
+{
+background-color:none;
+border-image:url(:/Resources/MyTitle/restore.png) 0 81 0 0 ;
+}
+
+QPushButton#restoreButton:hover
+{
+background-color:palette(alternate-base);
+border-image:url(:/Resources/MyTitle/restore.png) 0 54 0 27 ;
+}
+
+QPushButton#restoreButton:pressed
+{
+background-color:palette(highlight);
+border-image:url(:/Resources/MyTitle/restore.png) 0 27 0 54 ;
+}
+
+/*关闭按钮*/
+QPushButton#closeButton
+{
+background-color:none;
+border-image:url(:/Resources/MyTitle/close.png) 0 81 0 0 ;
+
+}
+
+QPushButton#closeButton:hover
+{
+background-color:palette(alternate-base);
+border-image:url(:/Resources/MyTitle/close.png) 0 54 0 27 ;
+}
+
+QPushButton#closeButton:pressed
+{
+background-color:palette(highlight);
+border-image:url(:/Resources/MyTitle/close.png) 0 27 0 54 ;
+}
