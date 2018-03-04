@@ -7,6 +7,9 @@
 
 ## screenshot
 
+![](https://github.com/sangxiaokai/FrameLessWidget/blob/master/screenshot/black.png)
+![](https://github.com/sangxiaokai/FrameLessWidget/blob/master/screenshot/green.png)
+
 ## How to Use
 
 ```qt
