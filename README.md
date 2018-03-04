@@ -14,6 +14,25 @@
 
 ```qt
 
+...
+#include "frameless_helper/framelesswindow.h"
+
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    ...
+
+    FramelessWindow framelessWindow;
+
+    
+    QWidget *w=new QWidget();
+    
+    framelessWindow.setContent(w);
+    framelessWindow.show();
+
+    return a.exec();
+}
+
 
 ```
 
