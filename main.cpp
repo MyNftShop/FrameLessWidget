@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
   MainWindow *mainWindow = new MainWindow;
   framelessWindow.setContent(mainWindow);
 
+
   framelessWindow.show();
 
   return a.exec();
