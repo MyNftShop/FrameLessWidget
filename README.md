@@ -35,6 +35,11 @@ int main(int argc, char *argv[])
 
 
 ```
+## 捐赠(Donation)
+
+![](https://github.com/sangxiaokai/app_licenser/blob/master/mypay.png)
+
+
 
 ## Licence
 
