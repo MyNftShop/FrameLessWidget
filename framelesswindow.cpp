@@ -55,11 +55,11 @@ FramelessWindow::FramelessWindow(QWidget *parent) :
 //    pTitleBar->m_pTitleLabel->setGraphicsEffect(textShadow);
 
     //window shadow
-    QGraphicsDropShadowEffect *windowShadow = new QGraphicsDropShadowEffect;
-    windowShadow->setBlurRadius(9.0);
-    windowShadow->setColor(palette().color(QPalette::Highlight));
-    windowShadow->setOffset(0.0);
-    ui->windowFrame->setGraphicsEffect(windowShadow);
+//    QGraphicsDropShadowEffect *windowShadow = new QGraphicsDropShadowEffect;
+//    windowShadow->setBlurRadius(9.0);
+//    windowShadow->setColor(palette().color(QPalette::Highlight));
+//    windowShadow->setOffset(0.0);
+//    ui->windowFrame->setGraphicsEffect(windowShadow);
 
     this->loadStyleSheet("MyTitle");
 }
@@ -95,9 +95,10 @@ void FramelessWindow::loadStyleSheet(const QString &sheetName)
 void FramelessWindow::setContent(QWidget *w)
 {
     ui->contentLayout->setMargin(0);
+//    ui->contentLayout->addWidget(w);
     ui->mainLayout->addWidget(w);
     ui->scrollArea->widget()->setMinimumSize(w->size());
-    resize(w->size().width(),w->size().height()+pTitleBar->height() );
+    resize(w->size().width()+2,w->size().height()+2+pTitleBar->height() );
 }
 
 void FramelessWindow::setMinimizeVisible(bool visible){
